@@ -9,24 +9,39 @@
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Chiron+GoRound+TC:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css?v=20.0" />
   <link rel="stylesheet" href="gift-theme.css" />
+  <link rel="stylesheet" href="visual-redesign.css" />
 </head>
 <body>
 
   <!-- S01: Hero -->
   <section id="pdf-sec-01" class="pdf-section hero" style="background: var(--gift-bg-2);">
+    <div class="bg-blob-container"><div class="bg-blob pink"></div><div class="bg-blob yellow"></div></div>
+    <div class="deco-wrapper">
+      <div class="deco-item delay-1 shape-star" style="top: 15%; left: 10%;"></div>
+      <div class="deco-item delay-2 shape-circle" style="top: 20%; right: 15%;"></div>
+      <div class="deco-item delay-3 shape-zigzag" style="bottom: 30%; left: 5%;"></div>
+      <div class="deco-item shape-circle-outline" style="bottom: 40%; right: 10%;"></div>
+    </div>
     <div class="container hero__inner" style="padding-top: 60px;">
       <div class="hero__content" style="text-align: center; max-width: 800px; margin: 0 auto;">
         <img src="assets/logo.svg" alt="AIkid Logo" style="height: 48px; margin: 0 auto 20px auto;" />
         <div class="hero__eyebrow">
           <span class="badge" style="background: var(--gift-accent); color: #fff;">Sáng tạo - Trí tuệ - Cảm xúc</span>
         </div>
-        <h1 class="hero__title text-gradient-gift" style="font-size: 2.8rem; margin-bottom: 20px;">
+        <h1 class="hero__title text-gradient-gift" style="font-size: 2.8rem; margin-bottom: 10px;">
           Mỗi ý tưởng của con đều xứng đáng được nhìn thấy
         </h1>
-        <div class="hero__img-wrap" style="margin-top: 30px;">
-          <img src="assets/custom_hero_1.jpg" alt="Kids using laptop" class="hero__img" style="border-radius: var(--radius-xl); box-shadow: var(--shadow-lg);" />
+        <div class="hero__img-wrap" style="margin-top: 0;">
+          <div class="blob-frame" style="max-width: 600px; margin: 0 auto;">
+            <img src="assets/custom_hero_1.jpg" alt="Kids using laptop" class="hero__img" style="width: 100%; display: block;" />
+          </div>
         </div>
       </div>
+    </div>
+    <div class="wave-divider">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C69.67,29.13,142.17,59.39,215.17,66.69,250.67,70.29,286.72,64.29,321.39,56.44Z" class="shape-fill" style="fill: var(--gift-bg-1)"></path>
+      </svg>
     </div>
   </section>
 
@@ -38,16 +53,16 @@
       </div>
       <div class="concerns__grid" style="display: grid; grid-template-columns: 1fr; gap: 1.5rem; max-width: 800px; margin: 0 auto;">
         <article class="concern-card" style="background: var(--gift-bg-3); border: 2px solid var(--gift-accent);">
-          <p class="concern-card__q" style="color: var(--color-text); font-weight: 600; font-size: 1.1rem; margin:0;">"Con cầm điện thoại lên, mở TikTok, YouTube xem cả ngày mà không học thêm được gì"</p>
+          <p class="concern-card__q" style="color: var(--color-text); font-weight: 600; font-size: 1.1rem; margin:0;">"Con cầm điện thoại lên, mở TikTok, YouTube — cả tiếng đồng hồ mà chẳng học thêm được gì."</p>
         </article>
         <article class="concern-card" style="background: var(--gift-bg-3); border: 2px solid var(--gift-accent);">
-          <p class="concern-card__q" style="color: var(--color-text); font-weight: 600; font-size: 1.1rem; margin:0;">"Mình muốn con biết dùng công nghệ có ích. Nhưng không biết bắt đầu từ đâu"</p>
+          <p class="concern-card__q" style="color: var(--color-text); font-weight: 600; font-size: 1.1rem; margin:0;">"Mình muốn con biết dùng công nghệ có ích. Nhưng không biết bắt đầu từ đâu."</p>
         </article>
         <article class="concern-card" style="background: var(--gift-bg-3); border: 2px solid var(--gift-accent);">
-          <p class="concern-card__q" style="color: var(--color-text); font-weight: 600; font-size: 1.1rem; margin:0;">"Thật ra, mình cũng chưa hiểu AI là gì cho rõ chỉ từng nghe nói nó là Chat GPT hoặc Gemini"</p>
+          <p class="concern-card__q" style="color: var(--color-text); font-weight: 600; font-size: 1.1rem; margin:0;">"Thật ra, mình cũng chưa hiểu AI là gì cho rõ — chỉ nghe nói đến ChatGPT, Gemini."</p>
         </article>
         <article class="concern-card" style="background: var(--gift-bg-3); border: 2px solid var(--gift-accent);">
-          <p class="concern-card__q" style="color: var(--color-text); font-weight: 600; font-size: 1.1rem; margin:0;">"Và mình sợ nếu con quen hỏi AI, con sẽ quên cách tự nghĩ"</p>
+          <p class="concern-card__q" style="color: var(--color-text); font-weight: 600; font-size: 1.1rem; margin:0;">"Và mình sợ, nếu con quen hỏi AI, con sẽ quên cách tự nghĩ."</p>
         </article>
       </div>
       <div style="text-align: center; margin-top: 3rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
@@ -69,8 +84,9 @@
       <div class="roles__grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
         <!-- HỌC MÀ CHƠI -->
         <div class="roles__col roles__col--child" style="background: #fff; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
-          <div class="roles__header" style="justify-content: center;">
-            <h3 class="roles__title" style="color: var(--color-primary); font-size: 1.5rem;">HỌC MÀ CHƠI</h3>
+          <div class="roles__header" style="justify-content: center; flex-direction: column;">
+            <div class="organic-icon-wrap" style="width: 100px; height: 100px; overflow: hidden; margin: 0 auto 15px auto; background: #DBEAFE;"><img src="assets/cat-magnify.png" style="width: 100%; height: 100%; object-fit: cover; transform: scale(1.15);"></div>
+            <h3 class="roles__title" style="color: var(--color-primary); font-size: 1.5rem; text-align: center; margin: 0;">HỌC MÀ CHƠI</h3>
           </div>
           <p style="font-weight: 600; margin-bottom: 1rem; color: var(--color-text);">Mỗi hoạt động là một lần con được khám phá và học thêm điều mới:</p>
           <ul class="roles__list" style="display: flex; flex-direction: column; gap: 0.8rem; height: 100%;">
@@ -83,8 +99,9 @@
         
         <!-- CHƠI MÀ HỌC -->
         <div class="roles__col roles__col--ai" style="background: #fff; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
-          <div class="roles__header" style="justify-content: center;">
-            <h3 class="roles__title" style="color: var(--color-primary); font-size: 1.5rem;">CHƠI MÀ HỌC</h3>
+          <div class="roles__header" style="justify-content: center; flex-direction: column;">
+            <div class="organic-icon-wrap" style="width: 100px; height: 100px; overflow: hidden; margin: 0 auto 15px auto; background: #FCE7F3;"><img src="assets/cat-cheer.png" style="width: 100%; height: 100%; object-fit: cover; transform: scale(1.15);"></div>
+            <h3 class="roles__title" style="color: var(--color-primary); font-size: 1.5rem; text-align: center; margin: 0;">CHƠI MÀ HỌC</h3>
           </div>
           <p style="font-weight: 600; margin-bottom: 1rem; color: var(--color-text);">Biến AI thành công cụ để con vừa chơi, vừa rèn luyện những kỹ năng quan trọng:</p>
           <ul class="roles__list" style="display: flex; flex-direction: column; gap: 0.8rem; height: 100%;">
@@ -101,25 +118,26 @@
   <section id="pdf-sec-04" class="pdf-section" style="background: var(--gift-bg-1); padding: var(--section-py) 0;">
     <div class="container">
       <div class="section-header section-header--center">
-        <h2 class="section-title text-gradient-gift">Đó cũng là lý do AIkid ra đời</h2>
-        <h3 class="section-subtitle" style="color: var(--gift-primary); font-size: 1.5rem; font-weight: 800;">TẠO RA BỘ NÃO THIÊN TÀI CHO TRẺ</h3>
-        <p class="section-lead" style="margin-top: 10px; font-weight: 600;">Nền tảng sáng tạo AI dành riêng cho trẻ em Việt</p>
+        <h2 class="section-title text-gradient-gift">VÌ SAO AIKID RA ĐỜI</h2>
+        <h3 class="section-subtitle" style="color: var(--gift-primary); font-size: 1.5rem; font-weight: 800;">Không phải để con tránh xa AI.</h3>
       </div>
       
       <div class="concerns__grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 3rem;">
         <article class="concern-card" style="background: #fff; border: none; box-shadow: var(--shadow-sm);">
-          <p class="concern-card__a">Không phải để con tránh xa AI. Mà để con <strong>làm quen với AI đúng cách</strong>, biết đặt câu hỏi, biết suy nghĩ trước khi sử dụng và biết dùng AI như một công cụ để học tập, sáng tạo và khám phá.</p>
+          <p class="concern-card__a">Mà để con làm quen với AI đúng cách — biết đặt câu hỏi, biết suy nghĩ trước khi hỏi, và xem AI như một công cụ để học, để sáng tạo.</p>
         </article>
         <article class="concern-card" style="background: #fff; border: none; box-shadow: var(--shadow-sm);">
-          <p class="concern-card__a">Ba mẹ cũng không cần phải là <strong>người RÀNH công nghệ</strong> hay tự mình tìm hiểu hàng loạt công cụ AI. Ba mẹ chỉ cần ở bên cạnh con, trò chuyện, đặt câu hỏi và khuyến khích con tự suy nghĩ, khám phá.</p>
+          <p class="concern-card__a">Ba mẹ không cần rành công nghệ. Chỉ cần ngồi cạnh con, trò chuyện, và khuyến khích con tự nghĩ.</p>
         </article>
         <article class="concern-card" style="background: #fff; border: none; box-shadow: var(--shadow-sm);">
-          <p class="concern-card__a">Những <strong>nội dung, công cụ và hoạt động phù hợp</strong> với độ tuổi của con, <strong>AIKid</strong> sẽ chuẩn bị sẵn để ba mẹ và con có thể cùng nhau khám phá AI một cách an toàn, dễ hiểu và có ích.</p>
+          <p class="concern-card__a">Phần chuẩn bị nội dung, hoạt động phù hợp độ tuổi — AIKid lo.</p>
         </article>
       </div>
       
-      <div style="text-align: center;">
-        <img src="assets/custom_hero_2.jpg" alt="Kids exploring" style="max-width: 600px; width: 100%; border-radius: var(--radius-xl); box-shadow: var(--shadow-md); margin: 0 auto;" />
+      <div style="text-align: center; margin-top: 3rem;">
+        <div class="blob-frame" style="max-width: 600px; margin: 0 auto; display: inline-block;">
+          <img src="assets/custom_hero_2.jpg" alt="Kids exploring" style="width: 100%; display: block;" />
+        </div>
       </div>
     </div>
   </section>
@@ -128,59 +146,32 @@
   <section id="pdf-sec-05" class="pdf-section" style="background: var(--gift-bg-2); padding: var(--section-py) 0;">
     <div class="container">
       <div class="section-header section-header--center">
-        <h2 class="section-title text-gradient-gift" style="font-size: 1.8rem;">Vì sao AIkid bắt đầu từ việc cho con tự khám phá?</h2>
+        <h2 class="section-title text-gradient-gift" style="font-size: 1.8rem;">CÁCH AIKID DẠY CON DÙNG AI</h2>
       </div>
       <div style="max-width: 700px; margin: 0 auto; background: #fff; padding: 2.5rem; border-radius: var(--radius-xl); box-shadow: var(--shadow-md); text-align: center; border: 2px dashed var(--gift-primary);">
-        <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">AI có thể trả lời rất nhiều câu hỏi.<br>Nhưng <strong>AIkid</strong> không muốn AI nghĩ thay con.</p>
+        <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">AI có thể trả lời rất nhiều câu hỏi.<br>Nhưng <strong>AIKid</strong> không để AI nghĩ thay con.</p>
         
         <div style="background: var(--gift-bg-3); padding: 1rem; border-radius: var(--radius-full); font-weight: 800; color: var(--color-primary); font-size: 1.2rem; margin: 1.5rem 0;">
-          Con nghĩ trước &rarr; AI hỗ trợ &rarr; Con tự tạo
+          Con nghĩ trước &rarr; Con hỏi &rarr; AI gợi ý &rarr; Con tự tạo
         </div>
         
-        <p style="font-size: 1.1rem;">Từ một ý tưởng, con có thể tạo nhân vật, kể câu chuyện và biến trí tưởng tượng thành sản phẩm của riêng mình.</p>
+        <p style="font-size: 1.1rem;">Từ một ý tưởng nhỏ, con có thể tạo nhân vật, kể câu chuyện, vẽ nên một thế giới của riêng mình.<br><br>AI không thay con suy nghĩ. AI giúp con biến điều mình nghĩ thành thứ nhìn thấy được.</p>
         <img src="SVG/Con.svg" alt="Brain" style="width: 60px; height: 60px; margin: 1.5rem auto 0 auto;" />
       </div>
     </div>
   </section>
 
-  <!-- S06: Why AI -->
-  <section id="pdf-sec-06" class="pdf-section" style="background: var(--gift-bg-1); padding: var(--section-py) 0;">
-    <div class="container">
-      <div class="section-header section-header--center">
-        <h2 class="section-title text-gradient-gift">TẠI SAO TRẺ CẦN HỌC CÁCH DÙNG AI ĐÚNG CÁCH?</h2>
-        <span class="badge" style="background: var(--gift-accent); color: #fff; font-size: 1rem; padding: 0.5rem 1rem; margin-top: 1rem;">Không chỉ biết dùng AI mà biết tự suy nghĩ</span>
-      </div>
-      
-      <div style="max-width: 800px; margin: 0 auto; text-align: center; font-size: 1.1rem;">
-        <p style="margin-bottom: 2rem;">AI có thể giúp con tìm kiếm, trả lời câu hỏi và tạo ra rất nhiều thứ. Nhưng điều quan trọng hơn là con vẫn phải là người đưa ra ý tưởng và quyết định.</p>
-        
-        <div style="background: var(--gift-bg-3); padding: 2rem; border-radius: var(--radius-lg); margin-bottom: 2rem; box-shadow: var(--shadow-sm);">
-          <p style="font-weight: 800; color: var(--color-primary); margin-bottom: 1rem; font-size: 1.2rem;">AIKid giúp con hình thành thói quen:</p>
-          <p style="color: var(--gift-primary); font-weight: 700; font-size: 1.3rem;">Tự nghĩ &rarr; Tự hỏi &rarr; AI hỗ trợ &rarr; Tự tạo</p>
-        </div>
-        
-        <p style="margin-bottom: 1rem;">Từ một ý tưởng nhỏ, con có thể tạo nhân vật, kể câu chuyện, vẽ thế giới riêng và biến trí tưởng tượng thành sản phẩm của chính mình.</p>
-        <p style="font-weight: 700; color: var(--color-primary);">AI không thay con suy nghĩ. AI giúp con biến ý tưởng thành hiện thực.</p>
-      </div>
-    </div>
-  </section>
-
   <!-- S07: Insight Kids Learn Best -->
-  <section id="pdf-sec-07" class="pdf-section" style="background: var(--gift-bg-3); padding: var(--section-py) 0;">
+  <section id="pdf-sec-07" class="pdf-section" style="background: var(--gift-bg-1); padding: var(--section-py) 0;">
     <div class="container">
-      <div style="text-align: center; margin-bottom: 2rem;">
-        <img src="assets/kid_showing_off.jpg" alt="Bé Vy" style="width: 100%; max-width: 500px; border-radius: var(--radius-xl); box-shadow: var(--shadow-md); margin: 0 auto 1.5rem auto; display: block;" />
-        <p style="color: var(--color-primary); font-weight: 700;">Bé Vy - 8 tuổi - Thanh Hóa</p>
-      </div>
-      
       <div class="section-header section-header--center" style="margin-bottom: 2rem;">
-        <h3 class="section-title" style="color: var(--color-primary); font-size: 1.6rem;">TRẺ HỌC TỐT NHẤT KHI ĐƯỢC TỰ MÌNH KHÁM PHÁ</h3>
+        <h3 class="section-title" style="color: var(--color-primary); font-size: 1.8rem;">TRẺ HỌC TỐT NHẤT KHI ĐƯỢC TỰ MÌNH KHÁM PHÁ</h3>
       </div>
       
       <div style="max-width: 800px; margin: 0 auto; text-align: center; font-size: 1.1rem; display: flex; flex-direction: column; gap: 1rem;">
-        <p>Những trải nghiệm trong những năm đầu đời giúp trẻ từng bước phát triển khả năng quan sát, ghi nhớ, ngôn ngữ và tư duy.</p>
-        <p>Vì vậy, thay vì chỉ cho con tiếp nhận thông tin, hãy tạo cơ hội để con được hỏi, được thử, được sáng tạo và tự mình tìm ra câu trả lời.</p>
-        <p>AIKid biến AI thành một người bạn đồng hành, giúp mỗi câu hỏi của con trở thành một cơ hội để khám phá và mỗi ý tưởng trở thành một sản phẩm của riêng mình.</p>
+        <p>Những năm đầu đời là lúc con phát triển khả năng quan sát, ghi nhớ, ngôn ngữ và tư duy nhanh nhất.</p>
+        <p>Vì vậy, thay vì chỉ tiếp nhận thông tin, con cần được hỏi, được thử, được sáng tạo — và tự tìm ra câu trả lời của mình.</p>
+        <p>AIKid biến AI thành một người bạn đồng hành. Mỗi câu hỏi của con là một lần khám phá. Mỗi ý tưởng là một sản phẩm của riêng con.</p>
       </div>
     </div>
   </section>
@@ -192,22 +183,16 @@
         
         <!-- Offer Content -->
         <div style="text-align: center;">
-          <h2 style="font-size: 2.5rem; font-weight: 900; margin-bottom: 1rem; color: #fff;">CƠ HỘI DÀNH CHO <span style="background: var(--gift-accent); color: var(--color-primary); padding: 0.2rem 0.8rem; border-radius: var(--radius-full); display: inline-block;">99 BA MẸ</span><br><span style="font-size: 1.2rem; display: block; margin-top: 0.5rem;">Nhanh tay nhất!</span></h2>
+          <h2 style="font-size: 2.5rem; font-weight: 900; margin-bottom: 1rem; color: #fff;">ƯU ĐÃI DÀNH CHO <span style="background: var(--gift-accent); color: var(--color-primary); padding: 0.2rem 0.8rem; border-radius: var(--radius-full); display: inline-block;">99 BA MẸ</span><br><span style="font-size: 1.2rem; display: block; margin-top: 0.5rem;">ĐĂNG KÝ SỚM NHẤT</span></h2>
           
           <div style="background: rgba(255,255,255,0.1); border-radius: var(--radius-xl); padding: 2rem; margin-top: 2rem; border: 1px solid rgba(255,255,255,0.2);">
-            <h3 style="font-size: 1.8rem; color: var(--gift-accent); margin-bottom: 0.5rem;">Trải nghiệm MIỄN PHÍ</h3>
-            <p style="margin-bottom: 1.5rem; font-size: 1.1rem;">cho mỗi TÀI KHOẢN ba mẹ có thể để con em thỏa sức vui chơi</p>
+            <h3 style="font-size: 1.8rem; color: var(--gift-accent); margin-bottom: 1.5rem;">Trải nghiệm cùng con — hoàn toàn miễn phí</h3>
             
-            <div style="display: flex; justify-content: center; align-items: center; gap: 1rem; margin-bottom: 2rem;">
-              <span style="text-decoration: line-through; font-size: 1.5rem; opacity: 0.7;">799.000đ</span>
-              <span style="background: var(--gift-accent); color: var(--color-primary); font-weight: 900; font-size: 2.5rem; padding: 0.5rem 1.5rem; border-radius: var(--radius-full);">0đ</span>
-            </div>
-            
-            <ul style="text-align: left; max-width: 400px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem;">
-              <li style="display: flex; gap: 0.5rem;"><span>&#10004;</span> <span><strong>Tặng 1 File tài liệu hướng dẫn</strong> giúp cha mẹ và con em sử dụng dễ dàng hơn.</span></li>
-              <li style="display: flex; gap: 0.5rem;"><span>&#10004;</span> <span><strong>Tặng bộ ebook:</strong> Ẩn dặm không nước mắt, Ăn dặm kiểu Nhật, và 150 món ăn dặm.</span></li>
-              <li style="display: flex; gap: 0.5rem;"><span>&#10004;</span> <span><strong>Tặng thêm khóa học</strong> về các bệnh tiêu hóa cho trẻ em lúc giao mùa trị giá 1.250.000đ</span></li>
-              <li style="display: flex; gap: 0.5rem;"><span>&#10004;</span> <span><strong>Hoàn tiền 100%</strong> nếu ba mẹ không hài lòng với khóa học trong vòng 3 ngày.</span></li>
+            <ul style="text-align: left; max-width: 500px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem;">
+              <li style="display: flex; gap: 0.5rem;"><span>&#10004;</span> <span>Buổi học thử, ba mẹ ngồi cạnh con từ đầu đến cuối</span></li>
+              <li style="display: flex; gap: 0.5rem;"><span>&#10004;</span> <span>Con có tác phẩm mang về sau buổi học</span></li>
+              <li style="display: flex; gap: 0.5rem;"><span>&#10004;</span> <span>Tài liệu hướng dẫn ba mẹ đồng hành cùng con</span></li>
+              <li style="display: flex; gap: 0.5rem;"><span>&#10004;</span> <span>Không cần thẻ, không cam kết học tiếp</span></li>
             </ul>
           </div>
         </div>
@@ -224,8 +209,8 @@
             <input type="tel" placeholder="Số điện thoại" required style="width: 100%; padding: 1rem; border: 2px solid var(--clr-gray-200); border-radius: var(--radius-md); font-size: 1rem; font-family: inherit;" />
             
             <button type="submit" class="btn btn-primary btn--lg btn--full" style="background: var(--gift-primary); box-shadow: 0 4px 16px rgba(230, 57, 70, 0.4); margin-top: 1rem; display: flex; flex-direction: column; height: auto; padding: 1rem;">
-              <span style="font-size: 1.2rem; font-weight: 900;">NHẬN TƯ VẤN</span>
-              <span style="font-size: 0.8rem; font-weight: 400;">Nhân viên tư vấn sẽ gọi lại trong 5 phút</span>
+              <span style="font-size: 1.2rem; font-weight: 900;">ĐĂNG KÝ NHẬN TƯ VẤN</span>
+              <span style="font-size: 0.8rem; font-weight: 400;">Đội ngũ AIKid sẽ gọi lại trong 5 phút để xếp lịch học thử.</span>
             </button>
           </form>
           
@@ -261,27 +246,27 @@
   <section id="pdf-sec-10" class="pdf-section" style="background: var(--gift-bg-1); padding: var(--section-py) 0;">
     <div class="container">
       <div class="section-header section-header--center">
-        <h2 class="section-title" style="color: var(--gift-primary);">GIẢNG VIÊN ĐỒNG HÀNH</h2>
-        <h3 class="section-subtitle" style="color: var(--color-text-2); font-size: 1.1rem; font-weight: 600;">CÙNG BA MẸ SUỐT THỜI GIAN HỌC</h3>
+        <h2 class="section-title" style="color: var(--gift-primary);">ĐỘI NGŨ ĐỒNG HÀNH CÙNG AIKID</h2>
+        <h3 class="section-subtitle" style="color: var(--color-text-2); font-size: 1.1rem; font-weight: 600;">Ba mẹ không cần tự tìm hiểu AI — đội ngũ đứng sau AIKid đã làm việc này mỗi ngày.</h3>
       </div>
       
       <div style="max-width: 800px; margin: 0 auto;">
         <ul style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 3rem;">
           <li style="display: flex; gap: 1rem; align-items: flex-start;">
             <span style="color: var(--gift-primary); font-size: 1.5rem; line-height: 1;">&bull;</span>
-            <p><strong>Antigravity Vietnam:</strong> CEO & Founder, cộng đồng kết nối developer, founder và nhà sáng tạo AI.</p>
+            <p><strong>Antigravity Vietnam:</strong> cộng đồng kết nối developer, founder và nhà sáng tạo AI</p>
           </li>
           <li style="display: flex; gap: 1rem; align-items: flex-start;">
             <span style="color: var(--gift-primary); font-size: 1.5rem; line-height: 1;">&bull;</span>
-            <p><strong>Victory.ai:</strong> Đồng sáng lập nền tảng sản xuất video bằng Creative AI cho thương mại điện tử.</p>
+            <p><strong>Victory.ai:</strong> nền tảng sản xuất video bằng AI cho thương mại điện tử</p>
           </li>
           <li style="display: flex; gap: 1rem; align-items: flex-start;">
             <span style="color: var(--gift-primary); font-size: 1.5rem; line-height: 1;">&bull;</span>
-            <p><strong>Sống chung với AI:</strong> Nhà sáng lập cộng đồng chia sẻ kiến thức và ứng dụng AI thực chiến tại Việt Nam.</p>
+            <p><strong>Sống chung với AI:</strong> cộng đồng chia sẻ kiến thức và ứng dụng AI thực chiến tại Việt Nam</p>
           </li>
           <li style="display: flex; gap: 1rem; align-items: flex-start;">
             <span style="color: var(--gift-primary); font-size: 1.5rem; line-height: 1;">&bull;</span>
-            <p><strong>Ten Media & Ten Tickers:</strong> Founder Ten Tickers, CEO Ten Media với hệ thống kênh truyền thông hàng triệu lượt theo dõi.</p>
+            <p><strong>Ten Media & Ten Tickers:</strong> hệ thống kênh truyền thông hàng triệu lượt theo dõi</p>
           </li>
         </ul>
         
@@ -290,8 +275,8 @@
         </div>
         
         <div style="background: var(--color-primary); color: #fff; padding: 1.5rem 2rem; border-radius: var(--radius-full); text-align: center; max-width: 500px; margin: 0 auto; box-shadow: var(--shadow-md);">
-          <h4 style="font-size: 1.5rem; font-weight: 900; margin-bottom: 0.25rem;">MR. LÊ HUY ĐỨC ANH</h4>
-          <p style="opacity: 0.9; font-size: 0.9rem;">Chuyên gia hàng đầu trong lĩnh vực AI</p>
+          <h4 style="font-size: 1.5rem; font-weight: 900; margin-bottom: 0.25rem;">LÊ HUY ĐỨC ANH</h4>
+          <p style="opacity: 0.9; font-size: 0.95rem;">Người trực tiếp xây dựng nội dung AI cho AIKid, với kinh nghiệm thực chiến AI và đồng sáng lập nhiều cộng đồng công nghệ tại Việt Nam.</p>
         </div>
       </div>
     </div>
@@ -301,22 +286,21 @@
   <section id="pdf-sec-11" class="pdf-section" style="background: var(--gift-bg-2); padding: var(--section-py) 0;">
     <div class="container">
       <div class="section-header section-header--center">
-        <h2 class="section-title" style="color: var(--gift-primary); font-size: 1.8rem;">CẢM NHẬN CỦA CÁC MẸ</h2>
-        <h3 class="section-subtitle" style="color: var(--color-primary); font-size: 1.1rem; font-weight: 600;">SAU KHI HỌC KHÓA HỌC AI TẠI AIKID</h3>
+        <h2 class="section-title" style="color: var(--gift-primary); font-size: 1.8rem;">CẢM NHẬN CỦA BA MẸ</h2>
       </div>
       
       <div style="max-width: 800px; margin: 0 auto; background: #fff; padding: 2.5rem; border-radius: var(--radius-xl); box-shadow: var(--shadow-md);">
-        <p style="margin-bottom: 1rem;">Lúc đầu mình cho con thử <strong>AIKid</strong> cũng chỉ nghĩ là <strong>cho con làm quen với AI thôi</strong>, chứ không kỳ vọng nhiều. Ai ngờ con lại thích cực kỳ.</p>
-        <p style="margin-bottom: 1rem;">Trước đây con hay hỏi mẹ mấy câu linh tinh, giờ nhiều lúc con tự nghĩ ra rồi hỏi AI, xong còn ngồi sửa tới sửa lui để ra đúng cái mình muốn.</p>
-        <p style="margin-bottom: 2rem;">Có lần con tự tạo được một nhân vật xong chạy đi khoe cả nhà: <strong>"Mẹ ơi con làm cái này nè!"</strong> Nhìn con hào hứng như vậy mình thấy vui hơn cả việc con làm ra sản phẩm đẹp hay không.</p>
+        <p style="margin-bottom: 1rem;">"Lúc đầu cho con thử AIKid, mình cũng không kỳ vọng nhiều. Ai ngờ con thích cực kỳ.</p>
+        <p style="margin-bottom: 1rem;">Trước đây con hay hỏi mẹ những câu linh tinh. Giờ nhiều lúc con tự nghĩ trước, rồi mới hỏi AI — xong còn ngồi sửa tới sửa lui cho ra đúng ý mình.</p>
+        <p style="margin-bottom: 2rem;">Có lần con tự tạo được một nhân vật, chạy ra khoe cả nhà: 'Mẹ ơi con làm cái này nè!' Nhìn con hào hứng vậy, mình vui hơn cả việc sản phẩm đẹp hay không."</p>
         
         <img src="assets/custom_hero_3.jpg" alt="Artwork by kid" style="width: 100%; max-width: 400px; border-radius: var(--radius-md); margin: 0 auto 2rem auto; display: block;" />
         
         <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; border-top: 1px solid var(--clr-gray-200); padding-top: 2rem;">
           <img src="assets/avatar_me_yen.jpg" alt="Avatar" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 2px solid var(--gift-primary);" />
           <div style="text-align: left;">
-            <p style="color: var(--gift-primary); font-weight: 800; font-size: 1.2rem; margin: 0;">Mẹ Yến</p>
-            <p style="color: var(--gift-primary); margin: 0; font-size: 0.9rem;">Chị Ngọc, 32 tuổi - TP. Hồ Chí Minh</p>
+            <p style="color: var(--gift-primary); font-weight: 800; font-size: 1.2rem; margin: 0;">Chị Ngọc, 32 tuổi</p>
+            <p style="color: var(--gift-primary); margin: 0; font-size: 0.9rem;">TP. Hồ Chí Minh — mẹ bé Vy, 8 tuổi</p>
           </div>
         </div>
       </div>
@@ -328,22 +312,16 @@
         
         <!-- Offer Content -->
         <div style="text-align: center;">
-          <h2 style="font-size: 2.5rem; font-weight: 900; margin-bottom: 1rem; color: #fff;">CƠ HỘI ĐĂNG KÝ DÀNH CHO <span style="background: var(--gift-accent); color: var(--color-primary); padding: 0.2rem 0.8rem; border-radius: var(--radius-full); display: inline-block;">99 BA MẸ</span><br><span style="font-size: 1.2rem; display: block; margin-top: 0.5rem;">Nhanh tay nhất!</span></h2>
+          <h2 style="font-size: 2.5rem; font-weight: 900; margin-bottom: 1rem; color: #fff;">ƯU ĐÃI DÀNH CHO <span style="background: var(--gift-accent); color: var(--color-primary); padding: 0.2rem 0.8rem; border-radius: var(--radius-full); display: inline-block;">99 BA MẸ</span><br><span style="font-size: 1.2rem; display: block; margin-top: 0.5rem;">ĐĂNG KÝ SỚM NHẤT</span></h2>
           
           <div style="background: rgba(255,255,255,0.1); border-radius: var(--radius-xl); padding: 2rem; margin-top: 2rem; border: 1px solid rgba(255,255,255,0.2);">
-            <h3 style="font-size: 1.8rem; color: var(--gift-accent); margin-bottom: 0.5rem;">Trải nghiệm MIỄN PHÍ</h3>
-            <p style="margin-bottom: 1.5rem; font-size: 1.1rem;">cho mỗi TÀI KHOẢN ba mẹ có thể để con em thỏa sức vui chơi</p>
+            <h3 style="font-size: 1.8rem; color: var(--gift-accent); margin-bottom: 1.5rem;">Trải nghiệm cùng con — hoàn toàn miễn phí</h3>
             
-            <div style="display: flex; justify-content: center; align-items: center; gap: 1rem; margin-bottom: 2rem;">
-              <span style="text-decoration: line-through; font-size: 1.5rem; opacity: 0.7;">799.000đ</span>
-              <span style="background: var(--gift-accent); color: var(--color-primary); font-weight: 900; font-size: 2.5rem; padding: 0.5rem 1.5rem; border-radius: var(--radius-full);">0đ</span>
-            </div>
-            
-            <ul style="text-align: left; max-width: 400px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem;">
-              <li style="display: flex; gap: 0.5rem;"><span>&#10004;</span> <span><strong>Tặng 1 File tài liệu hướng dẫn</strong> giúp cha mẹ và con em sử dụng dễ dàng hơn.</span></li>
-              <li style="display: flex; gap: 0.5rem;"><span>&#10004;</span> <span><strong>Tặng bộ ebook:</strong> Ẩn dặm không nước mắt, Ăn dặm kiểu Nhật, và 150 món ăn dặm.</span></li>
-              <li style="display: flex; gap: 0.5rem;"><span>&#10004;</span> <span><strong>Tặng thêm khóa học</strong> về các bệnh tiêu hóa cho trẻ em lúc giao mùa trị giá 1.250.000đ</span></li>
-              <li style="display: flex; gap: 0.5rem;"><span>&#10004;</span> <span><strong>Hoàn tiền 100%</strong> nếu ba mẹ không hài lòng với khóa học trong vòng 3 ngày.</span></li>
+            <ul style="text-align: left; max-width: 500px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem;">
+              <li style="display: flex; gap: 0.5rem;"><span>&#10004;</span> <span>Buổi học thử, ba mẹ ngồi cạnh con từ đầu đến cuối</span></li>
+              <li style="display: flex; gap: 0.5rem;"><span>&#10004;</span> <span>Con có tác phẩm mang về sau buổi học</span></li>
+              <li style="display: flex; gap: 0.5rem;"><span>&#10004;</span> <span>Tài liệu hướng dẫn ba mẹ đồng hành cùng con</span></li>
+              <li style="display: flex; gap: 0.5rem;"><span>&#10004;</span> <span>Không cần thẻ, không cam kết học tiếp</span></li>
             </ul>
           </div>
         </div>
@@ -394,41 +372,33 @@
   <section id="pdf-sec-14" class="pdf-section" style="background: var(--gift-bg-1); padding: var(--section-py) 0;">
     <div class="container">
       <div class="section-header section-header--center">
-        <h2 class="section-title" style="color: var(--gift-primary);">CÁC QUYỀN LỢI DÀNH CHO BA MẸ</h2>
+        <h2 class="section-title" style="color: var(--gift-primary);">QUYỀN LỢI DÀNH CHO BA MẸ</h2>
       </div>
       
-      <div class="roles__grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; max-width: 900px; margin: 0 auto;">
+      <div class="roles__grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; max-width: 1000px; margin: 0 auto;">
         
         <div style="text-align: center; padding: 2rem; background: var(--gift-bg-3); border-radius: var(--radius-xl); box-shadow: var(--shadow-sm);">
           <div style="width: 64px; height: 64px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem auto; box-shadow: var(--shadow-sm);">
             <img src="SVG/Thời gian.svg" alt="Icon" style="width: 32px; height: 32px;" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'32\\' height=\\'32\\' viewBox=\\'0 0 24 24\\' fill=\\'none\\' stroke=\\'%23602cd2\\' stroke-width=\\'2\\'><circle cx=\\'12\\' cy=\\'12\\' r=\\'10\\'/><path d=\\'M12 6v6l4 2\\'/></svg>'" />
           </div>
-          <h4 style="color: var(--color-primary); font-size: 1.2rem; margin-bottom: 1rem;">Học mọi lúc mọi nơi</h4>
-          <p style="font-size: 0.95rem; color: var(--color-text-2);">Nếu có thắc mắc, mẹ có thể gọi tới tổng đài hoặc để lại câu hỏi, câu hỏi của mẹ sẽ được chuyển tới chuyên gia có chuyên môn giải đáp và phản hồi ngay khi có kết quả.</p>
+          <h4 style="color: var(--color-primary); font-size: 1.2rem; margin-bottom: 1rem;">Học mọi lúc, mọi nơi</h4>
+          <p style="font-size: 0.95rem; color: var(--color-text-2);">Có thắc mắc, ba mẹ để lại câu hỏi — AIKid phản hồi sớm nhất có thể.</p>
         </div>
 
         <div style="text-align: center; padding: 2rem; background: var(--gift-bg-3); border-radius: var(--radius-xl); box-shadow: var(--shadow-sm);">
           <div style="width: 64px; height: 64px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem auto; box-shadow: var(--shadow-sm);">
             <img src="SVG/check.svg" alt="Icon" style="width: 32px; height: 32px;" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'32\\' height=\\'32\\' viewBox=\\'0 0 24 24\\' fill=\\'none\\' stroke=\\'%23602cd2\\' stroke-width=\\'2\\'><path d=\\'M22 11.08V12a10 10 0 1 1-5.93-9.14\\'/><polyline points=\\'22 4 12 14.01 9 11.01\\'/></svg>'" />
           </div>
-          <h4 style="color: var(--color-primary); font-size: 1.2rem; margin-bottom: 1rem;">Cam kết học tập</h4>
-          <p style="font-size: 0.95rem; color: var(--color-text-2);">Giảng viên đã có nhiều kinh nghiệm dạy trẻ em. Cam kết hoàn tiền trong vòng 3 ngày nếu mẹ không hài lòng về khóa học.</p>
+          <h4 style="color: var(--color-primary); font-size: 1.2rem; margin-bottom: 1rem;">Đồng hành cùng con</h4>
+          <p style="font-size: 0.95rem; color: var(--color-text-2);">Nội dung được chuẩn bị phù hợp từng độ tuổi, ba mẹ không cần tự tìm hiểu AI trước.</p>
         </div>
 
         <div style="text-align: center; padding: 2rem; background: var(--gift-bg-3); border-radius: var(--radius-xl); box-shadow: var(--shadow-sm);">
           <div style="width: 64px; height: 64px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem auto; box-shadow: var(--shadow-sm);">
             <img src="SVG/MONEY.svg" alt="Icon" style="width: 32px; height: 32px;" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'32\\' height=\\'32\\' viewBox=\\'0 0 24 24\\' fill=\\'none\\' stroke=\\'%23602cd2\\' stroke-width=\\'2\\'><line x1=\\'12\\' y1=\\'1\\' x2=\\'12\\' y2=\\'23\\'/><path d=\\'M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6\\'/></svg>'" />
           </div>
-          <h4 style="color: var(--color-primary); font-size: 1.2rem; margin-bottom: 1rem;">Tiết kiệm chi phí</h4>
-          <p style="font-size: 0.95rem; color: var(--color-text-2);">Mẹ có thể học tại bất cứ đâu, với 1 lần mua, mẹ đã có quyền truy cập mãi mãi vào nội dung của khóa học. Học lại bất cứ lúc nào mẹ muốn.</p>
-        </div>
-
-        <div style="text-align: center; padding: 2rem; background: var(--gift-bg-3); border-radius: var(--radius-xl); box-shadow: var(--shadow-sm);">
-          <div style="width: 64px; height: 64px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem auto; box-shadow: var(--shadow-sm);">
-            <img src="SVG/24.svg" alt="Icon" style="width: 32px; height: 32px;" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'32\\' height=\\'32\\' viewBox=\\'0 0 24 24\\' fill=\\'none\\' stroke=\\'%23602cd2\\' stroke-width=\\'2\\'><path d=\\'M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z\\'/></svg>'" />
-          </div>
-          <h4 style="color: var(--color-primary); font-size: 1.2rem; margin-bottom: 1rem;">Hỗ trợ trọn đời</h4>
-          <p style="font-size: 0.95rem; color: var(--color-text-2);">Thay vì phải bỏ ra 3-5 triệu để học một khóa chuyên sâu lại không được chủ động thời gian thì đến với AIKid mẹ chỉ cần ...k là đủ.</p>
+          <h4 style="color: var(--color-primary); font-size: 1.2rem; margin-bottom: 1rem;">Không ràng buộc</h4>
+          <p style="font-size: 0.95rem; color: var(--color-text-2);">Học thử trước, thấy hợp mới tiếp tục. Không ép, không cam kết.</p>
         </div>
 
       </div>
@@ -439,7 +409,7 @@
   <section id="pdf-sec-15" class="pdf-section" style="background: var(--gift-bg-2); padding: var(--section-py) 0;">
     <div class="container">
       <div class="section-header section-header--center">
-        <h2 class="section-title" style="color: var(--color-primary);">HƯỚNG DẪN CÁCH HỌC TẠI NHÀ</h2>
+        <h2 class="section-title" style="color: var(--color-primary);">BẮT ĐẦU NHƯ THẾ NÀO</h2>
       </div>
       
       <div style="display: grid; grid-template-columns: 1fr; gap: 3rem; max-width: 800px; margin: 0 auto; align-items: center;">
@@ -448,19 +418,19 @@
           <ul style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 2rem;">
             <li style="display: flex; gap: 1rem; align-items: center;">
               <span style="background: var(--gift-primary); color: #fff; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; flex-shrink: 0;">01</span>
-              <p>Tải App : https://app.aikid.vn/</p>
+              <p>Tải app AIKid tại app.aikid.vn</p>
             </li>
             <li style="display: flex; gap: 1rem; align-items: center;">
               <span style="background: var(--gift-primary); color: #fff; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; flex-shrink: 0;">02</span>
-              <p>Vào mục C</p>
+              <p>Đăng ký tài khoản cho con</p>
             </li>
             <li style="display: flex; gap: 1rem; align-items: center;">
               <span style="background: var(--gift-primary); color: #fff; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; flex-shrink: 0;">03</span>
-              <p>Nhập</p>
+              <p>Chọn độ tuổi và chủ đề con thích</p>
             </li>
             <li style="display: flex; gap: 1rem; align-items: center;">
               <span style="background: var(--gift-primary); color: #fff; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; flex-shrink: 0;">04</span>
-              <p>Chọn</p>
+              <p>Vào buổi học thử đầu tiên cùng con</p>
             </li>
           </ul>
           
