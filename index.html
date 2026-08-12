@@ -183,7 +183,11 @@
         
         <!-- Offer Content -->
         <div style="text-align: center;">
-          <h2 style="font-size: 2.5rem; font-weight: 900; margin-bottom: 1rem; color: #fff;">ƯU ĐÃI DÀNH CHO <span style="background: var(--gift-accent); color: var(--color-primary); padding: 0.2rem 0.8rem; border-radius: var(--radius-full); display: inline-block;">99 BA MẸ</span><br><span style="font-size: 1.2rem; display: block; margin-top: 0.5rem;">ĐĂNG KÝ SỚM NHẤT</span></h2>
+          <h2 style="font-size: 2.5rem; font-weight: 900; margin-bottom: 1rem; color: #fff; line-height: 1.4;">
+            ƯU ĐÃI DÀNH<br>
+            <span style="display: inline-block; margin-top: 0.5rem;">CHO <span style="background: var(--gift-accent); color: var(--color-primary); padding: 0.2rem 1rem; border-radius: var(--radius-full); margin: 0 0.5rem;">99 BA MẸ</span></span><br>
+            <span style="display: inline-block; margin-top: 0.5rem;">ĐĂNG KÝ SỚM NHẤT</span>
+          </h2>
           
           <div style="background: rgba(255,255,255,0.1); border-radius: var(--radius-xl); padding: 2rem; margin-top: 2rem; border: 1px solid rgba(255,255,255,0.2);">
             <h3 style="font-size: 1.8rem; color: var(--gift-accent); margin-bottom: 1.5rem;">Trải nghiệm cùng con — hoàn toàn miễn phí</h3>
@@ -312,7 +316,11 @@
         
         <!-- Offer Content -->
         <div style="text-align: center;">
-          <h2 style="font-size: 2.5rem; font-weight: 900; margin-bottom: 1rem; color: #fff;">ƯU ĐÃI DÀNH CHO <span style="background: var(--gift-accent); color: var(--color-primary); padding: 0.2rem 0.8rem; border-radius: var(--radius-full); display: inline-block;">99 BA MẸ</span><br><span style="font-size: 1.2rem; display: block; margin-top: 0.5rem;">ĐĂNG KÝ SỚM NHẤT</span></h2>
+          <h2 style="font-size: 2.5rem; font-weight: 900; margin-bottom: 1rem; color: #fff; line-height: 1.4;">
+            ƯU ĐÃI DÀNH<br>
+            <span style="display: inline-block; margin-top: 0.5rem;">CHO <span style="background: var(--gift-accent); color: var(--color-primary); padding: 0.2rem 1rem; border-radius: var(--radius-full); margin: 0 0.5rem;">99 BA MẸ</span></span><br>
+            <span style="display: inline-block; margin-top: 0.5rem;">ĐĂNG KÝ SỚM NHẤT</span>
+          </h2>
           
           <div style="background: rgba(255,255,255,0.1); border-radius: var(--radius-xl); padding: 2rem; margin-top: 2rem; border: 1px solid rgba(255,255,255,0.2);">
             <h3 style="font-size: 1.8rem; color: var(--gift-accent); margin-bottom: 1.5rem;">Trải nghiệm cùng con — hoàn toàn miễn phí</h3>
@@ -530,6 +538,26 @@
           minEls.forEach(el => el.innerText = minText);
           secEls.forEach(el => el.innerText = secText);
         }, 1000);
+      }
+      // 5. Add Wave Dividers dynamically
+      const sections = document.querySelectorAll('.pdf-section');
+      const getBgColor = (el) => window.getComputedStyle(el).backgroundColor;
+      
+      for (let i = 1; i < sections.length; i++) {
+        const prevBg = getBgColor(sections[i - 1]);
+        const currBg = getBgColor(sections[i]);
+        
+        // If background color changes, add a wave
+        if (prevBg !== currBg && prevBg !== 'rgba(0, 0, 0, 0)' && currBg !== 'rgba(0, 0, 0, 0)') {
+          const waveHtml = `
+            <div class="wave-divider wave-divider-top" style="pointer-events:none;">
+              <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                  <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="${prevBg}"></path>
+              </svg>
+            </div>
+          `;
+          sections[i].insertAdjacentHTML('afterbegin', waveHtml);
+        }
       }
     });
   </script>
