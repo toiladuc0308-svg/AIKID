@@ -1,0 +1,261 @@
+/* Gift Theme: Clean, Professional, and Mobile-Optimized */
+:root {
+  /* Colors - keeping it bright but professional */
+  --gift-primary: #FF4D6D;
+  --gift-accent: #FFB703;
+  --gift-bg-1: #ffffff;
+  --gift-bg-2: #FFF5F7; /* Very soft pink */
+  --gift-bg-3: #F4F9FF; /* Very soft blue */
+  
+  /* Soft shadows */
+  --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.03);
+  --shadow-md: 0 8px 30px rgba(255, 77, 109, 0.08);
+}
+
+/* =========================================
+   BASE STYLES & OVERRIDES 
+   ========================================= */
+
+/* Typography Improvements */
+h1, h2, h3, h4, .section-title, .hero__title {
+  text-wrap: balance;
+  line-height: 1.35 !important;
+}
+
+p, li, .concern-card__q, .concern-card__a, .roles__list {
+  line-height: 1.6 !important;
+}
+
+/* Override inline backgrounds to clean up "patchiness" */
+#pdf-sec-01 { background: var(--gift-bg-2) !important; }
+#pdf-sec-02 { background: var(--gift-bg-1) !important; }
+#pdf-sec-03 { background: var(--gift-bg-3) !important; }
+#pdf-sec-04 { background: var(--gift-bg-1) !important; }
+#pdf-sec-05 { background: var(--gift-bg-2) !important; }
+#pdf-sec-06 { background: var(--gift-bg-1) !important; }
+#pdf-sec-07 { background: var(--gift-bg-3) !important; }
+#pdf-sec-08-09 { background: var(--gift-primary) !important; color: #fff; }
+#pdf-sec-10 { background: var(--gift-bg-1) !important; }
+#pdf-sec-11 { background: var(--gift-bg-2) !important; }
+#pdf-sec-12-13 { background: var(--gift-primary) !important; color: #fff; }
+#pdf-sec-14 { background: var(--gift-bg-1) !important; }
+#pdf-sec-15 { background: var(--gift-bg-3) !important; }
+#pdf-sec-16 { background: var(--gift-primary) !important; }
+
+/* Text gradients - subtle and elegant */
+.text-gradient-gift {
+  background: linear-gradient(135deg, var(--gift-primary), #FF8E53);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  color: var(--gift-primary);
+}
+
+/* Clean up card boxes (remove dashed borders, heavy shadows) */
+.concern-card, 
+.roles__col,
+#pdf-sec-05 > .container > div,
+#pdf-sec-08-09 .container > div > div:nth-child(2) > div,
+#pdf-sec-13,
+#pdf-sec-09 {
+  background: #ffffff !important;
+  border: 1px solid rgba(0,0,0,0.04) !important;
+  border-radius: var(--radius-xl) !important;
+  box-shadow: var(--shadow-sm) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effects for cards */
+.concern-card:hover, 
+.roles__col:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md) !important;
+  border-color: rgba(255, 77, 109, 0.2) !important;
+}
+
+/* Buttons */
+.btn-primary {
+  background: var(--gift-primary) !important;
+  color: #fff !important;
+  border-radius: 99px !important;
+  border: none !important;
+  box-shadow: 0 4px 12px rgba(255, 77, 109, 0.3) !important;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  text-transform: none !important;
+}
+.btn-primary:hover {
+  background: #E83E5D !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 77, 109, 0.4) !important;
+}
+
+/* Image floating animation for Hero */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+.hero__img {
+  animation: float 5s ease-in-out infinite;
+  border: 6px solid #fff; /* clean white border */
+  box-shadow: var(--shadow-md) !important;
+}
+
+/* Clean up lists */
+ul {
+  padding-left: 0;
+}
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* =========================================
+   📱 MOBILE OPTIMIZATION (Max Width: 767px)
+   ========================================= */
+@media (max-width: 767px) {
+  /* 1. Reduce overall section padding to save space */
+  .pdf-section {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+  
+  /* 2. Optimize Hero section */
+  .hero__inner {
+    padding-top: 2rem !important;
+  }
+  .hero__title {
+    font-size: 2rem !important;
+    line-height: 1.3 !important;
+    margin-bottom: 1rem !important;
+  }
+  .hero__img-wrap {
+    margin-top: 1.5rem !important;
+  }
+  
+  /* 3. Adjust all Section Titles */
+  .section-title {
+    font-size: 1.5rem !important;
+    line-height: 1.4 !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .section-subtitle {
+    font-size: 1.2rem !important;
+  }
+  
+  /* 4. Ensure all grids stack perfectly into 1 column */
+  .roles__grid,
+  .concerns__grid,
+  #pdf-sec-08-09 .container > div,
+  #pdf-sec-12-13 .container > div,
+  #pdf-sec-14 .roles__grid,
+  #pdf-sec-15 .container > div {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.25rem !important;
+  }
+  
+  /* 5. Reduce card padding for mobile screens */
+  .concern-card, 
+  .roles__col,
+  #pdf-sec-05 > .container > div,
+  #pdf-sec-09,
+  #pdf-sec-13,
+  #pdf-sec-14 .roles__grid > div {
+    padding: 1.25rem !important;
+  }
+  
+  /* 6. Special adjustments for CTA and Forms */
+  #pdf-sec-08-09 h2, 
+  #pdf-sec-12-13 h2 {
+    font-size: 1.8rem !important;
+  }
+  
+  /* Offer box inside sections 8 & 12 */
+  #pdf-sec-08-09 .container > div > div:first-child > div,
+  #pdf-sec-12-13 .container > div > div:first-child > div {
+    padding: 1.25rem !important;
+  }
+  
+  /* Countdown size reduction */
+  #pdf-sec-09 > div:last-child > div,
+  #pdf-sec-13 > div:last-child > div {
+    gap: 0.5rem !important;
+  }
+  #pdf-sec-09 > div:last-child > div > div,
+  #pdf-sec-13 > div:last-child > div > div {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  #pdf-sec-09 > div:last-child > div > div > span:first-child,
+  #pdf-sec-13 > div:last-child > div > div > span:first-child {
+    font-size: 1.2rem !important;
+  }
+  
+  /* 7. Footer adjustments */
+  #pdf-sec-16 > div > div:first-child {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem !important;
+  }
+  #pdf-sec-16 img {
+    margin: 0 auto;
+  }
+}
+
+/* =========================================
+   🖥️ DESKTOP OPTIMIZATION (Min Width: 768px)
+   ========================================= */
+@media (min-width: 768px) {
+  /* Organize grids cleanly */
+  #pdf-sec-02 .concerns__grid { grid-template-columns: 1fr 1fr; max-width: 900px; }
+  #pdf-sec-03 .roles__grid { grid-template-columns: 1fr 1fr; }
+  #pdf-sec-04 .concerns__grid { grid-template-columns: repeat(3, 1fr); }
+  
+  #pdf-sec-08-09 .container > div, 
+  #pdf-sec-12-13 .container > div { 
+    grid-template-columns: 1fr 1fr; 
+    align-items: center; 
+  }
+  
+  #pdf-sec-14 .roles__grid { grid-template-columns: repeat(4, 1fr); }
+  
+  /* Ensure Hero fits well on large screens */
+  .hero__title {
+    font-size: 3.5rem !important;
+  }
+}
+
+/* =========================================
+   ✨ PREMIUM SMOOTHNESS (MƯỢT MÀ)
+   ========================================= */
+
+/* 1. Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 2. Premium easing for all interactions */
+a, button, .btn, .concern-card, .roles__col {
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+/* 3. Scroll Reveal Animations */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-up.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delays for grids */
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
