@@ -212,8 +212,16 @@
           </div>
           
           <form style="display: flex; flex-direction: column; gap: 1rem;">
-            <input type="text" placeholder="Tên của bạn" required style="width: 100%; padding: 1rem; border: 2px solid var(--clr-gray-200); border-radius: var(--radius-md); font-size: 1rem; font-family: inherit;" />
-            <input type="tel" placeholder="Số điện thoại" required style="width: 100%; padding: 1rem; border: 2px solid var(--clr-gray-200); border-radius: var(--radius-md); font-size: 1rem; font-family: inherit;" />
+            <input type="text" name="ho_ten" placeholder="Họ tên" required style="width: 100%; padding: 1rem; border: 2px solid var(--clr-gray-200); border-radius: var(--radius-md); font-size: 1rem; font-family: inherit;" />
+            <input type="tel" name="dien_thoai" placeholder="Điện thoại" required style="width: 100%; padding: 1rem; border: 2px solid var(--clr-gray-200); border-radius: var(--radius-md); font-size: 1rem; font-family: inherit;" />
+            <input type="email" name="email" placeholder="Email" style="width: 100%; padding: 1rem; border: 2px solid var(--clr-gray-200); border-radius: var(--radius-md); font-size: 1rem; font-family: inherit;" />
+            <select name="khu_vuc" required style="width: 100%; padding: 1rem; border: 2px solid var(--clr-gray-200); border-radius: var(--radius-md); font-size: 1rem; font-family: inherit; appearance: none; background: #fff url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"%23334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"4 6 8 10 12 6\"/></svg>') no-repeat right 1rem center; background-size: 16px;" onchange="this.nextElementSibling.style.display = this.value === 'Khu vực khác' ? 'block' : 'none'; if(this.value === 'Khu vực khác') this.nextElementSibling.setAttribute('required', 'required'); else this.nextElementSibling.removeAttribute('required');">
+              <option value="" disabled selected>Khu vực của bạn</option>
+              <option value="Hà Nội">Hà Nội</option>
+              <option value="TP. Hồ Chí Minh">TP. Hồ Chí Minh</option>
+              <option value="Khu vực khác">Khu vực khác</option>
+            </select>
+            <input type="text" name="khu_vuc_khac" placeholder="Nhập khu vực của bạn" style="display: none; width: 100%; padding: 1rem; border: 2px solid var(--clr-gray-200); border-radius: var(--radius-md); font-size: 1rem; font-family: inherit;" />
             
             <button type="submit" class="btn btn-primary btn--lg btn--full" style="background: var(--gift-primary); box-shadow: 0 4px 16px rgba(230, 57, 70, 0.4); margin-top: 1rem; display: flex; flex-direction: column; height: auto; padding: 1rem; white-space: normal; text-align: center;">
               <span style="font-size: 1.2rem; font-weight: 900; line-height: 1.4; margin-bottom: 4px;">ĐĂNG KÝ NHẬN TƯ VẤN</span>
@@ -345,8 +353,16 @@
           </div>
           
           <form style="display: flex; flex-direction: column; gap: 1rem;">
-            <input type="text" placeholder="Tên của bạn" required style="width: 100%; padding: 1rem; border: 2px solid var(--clr-gray-200); border-radius: var(--radius-md); font-size: 1rem; font-family: inherit;" />
-            <input type="tel" placeholder="Số điện thoại" required style="width: 100%; padding: 1rem; border: 2px solid var(--clr-gray-200); border-radius: var(--radius-md); font-size: 1rem; font-family: inherit;" />
+            <input type="text" name="ho_ten" placeholder="Họ tên" required style="width: 100%; padding: 1rem; border: 2px solid var(--clr-gray-200); border-radius: var(--radius-md); font-size: 1rem; font-family: inherit;" />
+            <input type="tel" name="dien_thoai" placeholder="Điện thoại" required style="width: 100%; padding: 1rem; border: 2px solid var(--clr-gray-200); border-radius: var(--radius-md); font-size: 1rem; font-family: inherit;" />
+            <input type="email" name="email" placeholder="Email" style="width: 100%; padding: 1rem; border: 2px solid var(--clr-gray-200); border-radius: var(--radius-md); font-size: 1rem; font-family: inherit;" />
+            <select name="khu_vuc" required style="width: 100%; padding: 1rem; border: 2px solid var(--clr-gray-200); border-radius: var(--radius-md); font-size: 1rem; font-family: inherit; appearance: none; background: #fff url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"%23334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"4 6 8 10 12 6\"/></svg>') no-repeat right 1rem center; background-size: 16px;" onchange="this.nextElementSibling.style.display = this.value === 'Khu vực khác' ? 'block' : 'none'; if(this.value === 'Khu vực khác') this.nextElementSibling.setAttribute('required', 'required'); else this.nextElementSibling.removeAttribute('required');">
+              <option value="" disabled selected>Khu vực của bạn</option>
+              <option value="Hà Nội">Hà Nội</option>
+              <option value="TP. Hồ Chí Minh">TP. Hồ Chí Minh</option>
+              <option value="Khu vực khác">Khu vực khác</option>
+            </select>
+            <input type="text" name="khu_vuc_khac" placeholder="Nhập khu vực của bạn" style="display: none; width: 100%; padding: 1rem; border: 2px solid var(--clr-gray-200); border-radius: var(--radius-md); font-size: 1rem; font-family: inherit;" />
             
             <button type="submit" class="btn btn-primary btn--lg btn--full" style="background: var(--gift-primary); box-shadow: 0 4px 16px rgba(230, 57, 70, 0.4); margin-top: 1rem; display: flex; flex-direction: column; height: auto; padding: 1rem; white-space: normal; text-align: center;">
               <span style="font-size: 1.2rem; font-weight: 900; line-height: 1.4; margin-bottom: 4px;">ĐĂNG KÝ NHẬN TƯ VẤN</span>
