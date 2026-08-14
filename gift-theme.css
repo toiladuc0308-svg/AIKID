@@ -1,11 +1,13 @@
 /* Gift Theme: Clean, Professional, and Mobile-Optimized */
 :root {
   /* Colors - keeping it bright but professional */
-  --gift-primary: #FF4D6D;
-  --gift-accent: #FFEA00;
-  --gift-bg-1: #ffffff;
-  --gift-bg-2: #FFF5F7; /* Very soft pink */
-  --gift-bg-3: #F4F9FF; /* Very soft blue */
+  --gift-primary: #FF5C8A;
+  --gift-primary-light: #FF9EB5;
+  --gift-primary-orange: #FF8E53;
+  --gift-accent: #239FB9;
+  --gift-bg-1: #FDFAF4;
+  --gift-bg-2: #F5EDE6;
+  --gift-bg-3: #E5D9CE;
   
   /* Soft shadows */
   --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.03);

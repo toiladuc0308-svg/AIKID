@@ -39,10 +39,11 @@
   --color-bg-alt: #f8f6ff;
   --color-bg-dark: #191428;
   --color-text: #334155;
-  --color-text-2: #8C6F65;
-  --color-text-3: #BBA49E;
-  --color-primary: #7843E2;
-  --color-primary-h: #602cd2;
+  --color-text-2: #704E48;
+  --color-text-3: #8C6F65;
+  --color-text-placeholder: #C3A69C;
+  --color-primary: #FF5C8A;
+  --color-primary-h: #FF9EB5;
   --color-accent: #FF8E53;
 
   /* Gradients */

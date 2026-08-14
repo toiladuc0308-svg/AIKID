@@ -1,8 +1,8 @@
 /* --- VISUAL REDESIGN (Reference based) --- */
 :root {
-  --color-wave-1: #ffffff;
-  --color-wave-2: #F4F9FF; /* Soft Blue */
-  --color-wave-3: #FFF5F7; /* Soft Pink */
+  --color-wave-1: #FDFAF4;
+  --color-wave-2: #BFF2FB;
+  --color-wave-3: #F5EDE6;
 }
 
 /* 1. Organic Blob Frames for Images */
@@ -100,10 +100,10 @@
 
 /* Custom organic backgrounds for roles cards */
 .roles__col--child {
-  border-bottom: 8px solid #60A5FA !important;
+  border-bottom: 8px solid #239FB9 !important;
 }
 .roles__col--ai {
-  border-bottom: 8px solid #FCA5A5 !important;
+  border-bottom: 8px solid #FF5C8A !important;
 }
 
 /* 5. Blob Backgrounds for Sections */
@@ -120,9 +120,9 @@
   filter: blur(80px);
   opacity: 0.6;
 }
-.bg-blob.pink { background: #FCE7F3; width: 500px; height: 500px; top: -150px; right: -150px; }
-.bg-blob.blue { background: #DBEAFE; width: 400px; height: 400px; bottom: -50px; left: -100px; }
-.bg-blob.yellow { background: #FEF3C7; width: 450px; height: 450px; top: 40%; right: -50px; }
+.bg-blob.pink { background: #FF9EB5; width: 500px; height: 500px; top: -150px; right: -150px; }
+.bg-blob.blue { background: #BFF2FB; width: 400px; height: 400px; bottom: -50px; left: -100px; }
+.bg-blob.yellow { background: #239FB9; width: 450px; height: 450px; top: 40%; right: -50px; }
 
 /* 6. Typography & Icons Hierarchy */
 .organic-icon-wrap {
