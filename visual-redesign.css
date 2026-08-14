@@ -65,6 +65,9 @@
 .pdf-section {
   position: relative;
   z-index: 1;
+}
+
+.pdf-section:not(.footer) {
   /* Thêm khoảng cách dưới để chữ không bị che bởi đường cong của section tiếp theo */
   padding-bottom: calc(var(--section-py) + 40px) !important;
 }
