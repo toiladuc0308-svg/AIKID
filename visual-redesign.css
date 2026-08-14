@@ -61,30 +61,28 @@
   background-size: 10px 10px;
 }
 
-/* 3. Section Wave Dividers */
+/* 3. Section Soft Curves (Kid-friendly) */
 .pdf-section {
   position: relative;
   z-index: 1;
+  /* Thêm khoảng cách dưới để chữ không bị che bởi đường cong của section tiếp theo */
+  padding-bottom: calc(var(--section-py) + 40px) !important;
 }
-.wave-divider {
+
+/* Tạo đường cong mềm mại nhô lên phía trên của mỗi section, đè lên section trước đó */
+.pdf-section::before {
+  content: '';
   position: absolute;
-  bottom: -1px;
+  top: -40px;
   left: 0;
   width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  z-index: 1;
+  height: 80px;
+  background: inherit;
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  z-index: -1;
+  pointer-events: none;
 }
-.wave-divider svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 70px;
-}
-.wave-divider .shape-fill { fill: var(--color-wave-1); }
-.wave-divider-top {
-  top: -1px; bottom: auto; transform: rotate(180deg);
-}
+
 
 /* 4. Refined Cards (Soft & Deep) */
 .concern-card, .roles__col, .testi-card, .roles-col-new {
